@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Julian is an independent UX/UI designer and developer." />
+    <meta name="author" content="Julian. | UX/UI Designer & Developer">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Julian. UX/UI Designer & Developer</title>
+
+    <!-- Caomei Icons-->
+    <link href="css/caomei.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="particles">
+      <div id="intro">
+        <h1>Julian.</h1>
+        <span id="typed" style="white-space:pre;"></span>
+      </div>
+    </div>
+
+    <!--  Core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+    <script src="js/typed.min.js"></script>
+
+    <script type="text/javascript">
+
+    // Typed.js Usage
+    document.addEventListener('DOMContentLoaded', function(){
+
+        Typed.new("#typed", {
+            // stringsElement: document.getElementById('typed-strings'),
+            strings: ["a creative ui designer", "a professional ux developer"],
+          	// typing speed
+          	typeSpeed: 50,
+          	// time before typing starts
+          	startDelay: 0,
+          	// backspacing speed
+          	backSpeed: 0,
+          	// shuffle the strings
+          	shuffle: false,
+          	// time before backspacing
+          	backDelay: 1000,
+          	// Fade out instead of backspace (must use CSS class)
+          	fadeOut: false,
+          	fadeOutClass: 'typed-fade-out',
+          	fadeOutSpeed: 500, // milliseconds
+          	// loop
+          	loop: true,
+          	// null = infinite
+          	loopCount: null,
+          	// show cursor
+          	showCursor: true,
+          	// character for cursor
+          	cursorChar: "|",
+          	// attribute to type (null == text)
+          	attr: null,
+          	// either html or text
+          	contentType: 'html'
+
+        });
+
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+            });
+        }
+
+    });
+
+    // Particleground.js Usage
+    $(document).ready(function() {
+      $('#particles').particleground({
+        dotColor: '#f5f5f5',
+        lineColor: '#f5f5f5'
+      });
+      $('.intro').css({
+        'margin-top': -($('.intro').height() / 2)
+      });
+    });
+
+    </script>
+  </body>
+</html>
