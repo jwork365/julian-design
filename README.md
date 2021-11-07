@@ -1,2 +1,2 @@
-# juliandesign
+# julian.design
 
