@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.3110b13d1d4c69476756851f59114a69.js"
+  "/precache-manifest.153ef8fd6d10a10a989f656f71789fee.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "juliandesign"});
